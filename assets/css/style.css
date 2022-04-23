@@ -84,14 +84,6 @@ header.primary nav ul li a {
     border-radius: 20px;
 }
 
-header.primary nav ul li a:hover,
-header.primary nav ul li a:active {
-  width: 125%;
-  height: 125%;
-  transition: 5s;
-  /* This doesn't work :( */
-}
-
 #content {
     display: flex;
     padding: 0;
