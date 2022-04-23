@@ -1,3 +1,300 @@
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ---------------Utility Classes----------------- */
+  .container {
+    width: 70vw;
+    margin: 40px auto;
+  }
+  img{
+      max-width: 100%;
+  }
+  
+  /* ---------------Global Styles----------------- */
+  
+  /* Color Scheme
+    #662C8F
+    #DBA549
+    #A65ADB
+    #44DB84
+    #338F5A
+  */
+/* ---------------Global Styles----------------- */
 body{
-    background-color:dodgerblue;
+    font-family: 'Comic Neue', cursive;
+    margin: 0px;
+    text-shadow: 1px 1px;
+    background-color: #1E90FF;
+}
+
+header.primary {
+    background-color: #1E90FF;
+    text-align: center;
+    color: #0000FF;
+    padding: 40px 40px 40px 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%239C92AC' fill-opacity='0.5'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+header.primary h1{
+    font-size: 3.6rem;
+    margin: 30px 30px;
+}
+
+header.primary h1 a{
+    color:#A65ADB;
+    text-decoration: none;
+}
+
+header.primary h2{
+    font-size: 1.7rem;
+    margin: 20px auto 10px;
+}
+
+header.primary nav {
+    width: auto;
+}
+
+header.primary nav ul{
+    /*removes extra space for list item attachments*/
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+header.primary nav ul li{
+    list-style-type: none;
+}
+
+
+header.primary nav ul li a {
+    text-decoration: none;
+    color:#A65ADB;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 20px;
+}
+
+header.primary nav ul li a:hover,
+header.primary nav ul li a:active {
+  width: 125%;
+  height: 125%;
+  transition: 5s;
+  /* This doesn't work :( */
+}
+
+#content {
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#content article.post{
+    width:24%;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+
+    padding:15px;
+
+    border-radius:7px;
+
+    font-size:1rem;
+}
+
+.post time.post-date, figcaption, .post-meta{
+    text-transform: uppercase;
+
+    color: black;
+}
+
+.post figure{
+    margin: 0;
+}
+
+.post img{
+    border: 1px solid black;
+    margin: 3px 0;
+}
+
+.post a {
+    color: #338F5A;
+}
+
+.post a:hover, .post a:active{
+    color: black;
+    text-decoration-thickness: 1px;
+    transition: 5s;
+}
+
+aside[role="complementary"]{
+    background-color: #A65ADB;
+    color: black;
+    padding: 2rem;
+    display: flex;
+}
+
+aside div.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+aside div.container article.widget{
+    width: 50%;
+}
+
+aside div.container article.widget a{
+    color: #338F5A;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+aside div.container article.widget a:hover, aside div.container article.widget a:active{
+    color: black;
+    text-decoration-thickness: 1px;
+    transition: 5s;
+}
+
+aside div.container article.widget footer{
+    display: none;
+}
+
+#colophon {
+  background-color: #662C8F;
+}
+
+#colophon h6{
+    padding:10px;
+    margin:2px;
+    text-align:center;
+    color: black;
+    font-size:1rem;
+    text-transform:uppercase;
+}
+
+#additional-elements {
+    border-top: 1px black;
+    padding-top: 5vh;
+}
+
+#additional-elements h2{
+    font-size: 1.7rem;
+    margin: 20px auto 10px;
+}
+
+#additional-elements h3{
+    border-left: 40px solid blue;
+    padding-left: 7px;
+}
+
+#additional-elements a{
+    color: #338F5A;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+#additional-elements a:hover{
+    color: black;
+    text-decoration-thickness: 1px;
+    transition: 5s;
+}
+
+#additional-elements img{
+    float: right;
+    margin-left: 2vw;
+}
+
+table{
+    width:100%;
+    border:1px solid #c0c0c0;
+    border-collapse:collapse;
+  }
+  
+  tr:nth-child(even){
+      background-color: #3a1852;
+  }
+
+
+  th{
+    background:#662C8F;
+    color:black;
+    width:33%;
+    padding: 0.2rem;
+  }
+  td{
+    border:1px solid #c0c0c0;
+  }
+
+dt{
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+
+dd + dd{
+    margin-top: 0.8rem;
+}
+
+dd + dt{
+    margin-top: 1.5rem;
+}
+
+blockquote {
+    margin: 5rem;
+    background-color: #643586;
+    border: 10px outset black;
+    box-shadow: 0 5px 10px black;
+}
+
+blockquote p:before {
+content: open-quote;
+font-size: 2em;
+}
+
+blockquote p {
+display: inline;
+text-align: justify;
+padding: 2rem;
+}
+
+blockquote cite{
+    display:block;
+    text-align: right;
+    font-size: 0.7rem;
+}
+
+blockquote p:after{
+    content: close-quote;
+    font-size: 2em;
+}
+
+div {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.widget{
+    width:45%;
+    
+    margin: 2vw;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+
+    padding:15px;
+
+    border-radius:12px;
+
+    font-size:1rem;
 }
