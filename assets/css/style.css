@@ -87,6 +87,7 @@ header.primary nav ul li a {
 #content {
     display: flex;
     padding: 0;
+    color:white;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -106,9 +107,13 @@ header.primary nav ul li a {
 .post time.post-date, figcaption, .post-meta{
     text-transform: uppercase;
 
-    color: black;
+    color: white;
 }
 
+
+section#content.container{
+    color: white;
+}
 .post figure{
     margin: 0;
 }
@@ -152,7 +157,7 @@ aside div.container article.widget a{
 }
 
 aside div.container article.widget a:hover, aside div.container article.widget a:active{
-    color: black;
+    color: white;
     text-decoration-thickness: 1px;
     transition: 5s;
 }
@@ -169,7 +174,7 @@ aside div.container article.widget footer{
     padding:10px;
     margin:2px;
     text-align:center;
-    color: black;
+    color: white;
     font-size:1rem;
     text-transform:uppercase;
 }
