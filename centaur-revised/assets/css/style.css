@@ -1,0 +1,94 @@
+#content-header img{
+    height: 5vh;
+    min-width: 200px;
+    min-height: 350px;
+    float: right;
+    margin-left: 2vw;
+}
+
+#action-shot{
+    height: 5vh;
+    min-width: 125px;
+    min-height: 350px;
+    float: left;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#intro p{
+    text-align: center;
+}
+ 
+h3{
+    text-align: center;
+}
+
+#content {
+    padding: 0;
+}
+
+dt{
+    font-weight: bolder;;
+}
+
+dd + dd{
+    margin-top: 0.8rem;
+}
+
+dd + dt{
+    margin-top: 1.5rem;
+}
+
+dt + dd{
+    margin-top: 0.8rem;;
+}
+body{
+    background-color: #ffff;
+    color: #101010
+}
+
+#colophon{
+    background-color: #ffff;
+}
+.faq-container{
+    padding-top: 5vh;
+    padding-left: 10vw;
+}
+
+details {
+    padding: .5em;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 15vw;
+    min-width: 125px;
+}
+
+details + details{
+    margin-top: 5vh;
+}
+
+summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+    width: 100%;
+    text-align: center;
+}
+
+details[open] {
+    padding: .5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+body{
+    background-color: #ffff;
+    color: #101010
+}
+
+#colophon{
+    background-color: #ffff;
+}
