@@ -1,35 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Web Project Starter</title>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Keyword rich narrative on site purpose" />
-  <meta name="author" content="Robert Sago" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!-- Add your own Font -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Segway Centaur Project</title>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#333;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+main{
+    max-width:800px;
+    margin:auto;
+    padding:30px;
+    background:white;
+}
+
+h1{
+    margin-top:0;
+}
+
+form{
+    margin-top:20px;
+}
+
+label{
+    font-weight:bold;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+button{
+    background:#333;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#555;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    font-size:0.9em;
+    color:#666;
+}
+</style>
 </head>
 
 <body>
-  
-  <h2><center><img src="https://rsago.github.io/ifsc-1310/images/segway_logo_small.png"></center></h2>
-  </header>
-<nav role="navigation" class="primary-nav">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="faq.html">Frequently Asked Questions</a></li>
-    <li><a href="#">Contact Us</a></li>
-  </ul>
-</nav>
-<section id="content" class="container">
 
-    <div id="wufoo-z1tgo4h01jwto23"> Fill out my <a href="https://rsago1.wufoo.com/forms/z1tgo4h01jwto23/">online form</a>. </div> <script type="text/javascript"> var z73ur5f0qbprnm; (function(d, t) { var s = d.createElement(t), options = { 'userName':'rsago1', 'formHash':'z1tgo4h01jwto23', 'autoResize':true, 'height':'578', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1tgo4h01jwto23 = new WufooForm(); z1tgo4h01jwto23.initialize(options); z1tgo4h01jwto23.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+<header>
+<h1>Contact</h1>
+<p>Segway Centaur Project</p>
+</header>
 
-    <footer id="colophon" role="contentinfo">
-        <h6>&copy; 2022 Robert Sago</h6>
-        <h6><a href="mailto:rsago@ualr.edu?subject=Questions%20about%20the%20centaur">Contact Me</a></h6>
-      </footer>
-    </body>
-    
-    </html>
+<main>
+
+<p>If you'd like to reach out about this project or my work, you can send a message using the form below.</p>
+
+<form action="https://formspree.io/f/xeerrplr" method="POST">
+
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="6" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+<hr>
+
+<p>
+If the form above doesn't work, you can also contact me directly at  
+<a href="mailto:rsago@ualr.edu">rsago@uarl.edu</a>.
+</p>
+
+</main>
+
+<footer>
+<p>© 2022 Robert Sago</p>
+</footer>
+
+</body>
+</html>
